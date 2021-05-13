@@ -1,10 +1,22 @@
-import './App.css';
-import Login from './components/Login';
+import "./App.css";
+import Sidebar from "./components/Sidebar";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Searchbox from "./components/Searchbox";
+import Login from "./components/Login";
 
 function App() {
   return (
     <div className="App">
-      <Login />
+      <Router>
+        {/* <Searchbox/> */}
+        <Sidebar />
+        <Switch>
+          <Route exact path="/"></Route>
+          <Route exact path="/login">
+            <Login />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
