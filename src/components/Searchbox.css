@@ -1,0 +1,29 @@
+.searchbox-web {
+  display:inline;
+  width: 200px;
+  margin-left: 300px;
+  background: linear-gradient(
+    87.82deg,
+    rgba(255, 255, 255, 0.49) -15.28%,
+    rgba(255, 255, 255, 0.6) 35.95%,
+    rgba(255, 255, 255, 0.27) 129.41%
+  );
+  border-radius: 20px;
+}
+.search-area {
+  
+  background: linear-gradient(
+    87.82deg,
+    rgba(255, 255, 255, 0.49) -15.28%,
+    rgba(255, 255, 255, 0.6) 35.95%,
+    rgba(255, 255, 255, 0.27) 129.41%
+  );
+  border-radius: 20px;
+}
+.search-icon {
+   
+
+}
+#icon{
+    
+}
