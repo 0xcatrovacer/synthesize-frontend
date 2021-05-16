@@ -1,8 +1,10 @@
-
 .sidebar-web {
+  position: absolute;
+  left: 0;
+  top: 0;
   margin: 0;
   width: 250px;
-  height:85%;
+  height: 85%;
   background: linear-gradient(
     180deg,
     #110849 0%,
@@ -10,7 +12,6 @@
   );
   padding-bottom: 20px;
   display: inline-block;
-   
 }
 
 .sidebar-web .branding {
