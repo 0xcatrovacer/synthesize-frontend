@@ -1,8 +1,11 @@
 import React from 'react'
 import GoogleLogin from 'react-google-login'
 import axios from "axios"
+import { useHistory } from 'react-router'
 
 const Login = () => {
+
+    const history = useHistory()
 
     const responseGoogle = (response) => {
         const access_token = response.accessToken
@@ -15,6 +18,7 @@ const Login = () => {
             if (res.data.ok) {
                 localStorage.setItem('token', response.tokenId)
                 console.log(res)
+                history.push('/home')
             } else {
                 console.log('error')
             }
