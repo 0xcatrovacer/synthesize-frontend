@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Login from "./components/Login";
 import Home from "./components/Home";
+import AuthRoute from "./utilities/AuthRoute";
 
 function App() {
   return (
@@ -13,9 +14,7 @@ function App() {
             <Login />
           </Route>
 
-          <Route path="/home">
-            <Home />
-          </Route>
+          <AuthRoute path="/home" exact component={Home} />
 
         </Switch>
       </Router>
