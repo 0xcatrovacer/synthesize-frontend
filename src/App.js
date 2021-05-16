@@ -8,11 +8,11 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {/* <Searchbox/> */}
+        {<Searchbox />}
         <Sidebar />
         <Switch>
           <Route exact path="/"></Route>
-          <Route exact path="/login">
+          <Route path="/login">
             <Login />
           </Route>
         </Switch>

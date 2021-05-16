@@ -4,17 +4,17 @@ import axios from "axios"
 
 const Login = () => {
 
-    const responseGoogle = (res) => {
-        const access_token = res.accessToken
-        const email = res.profileObj.email
+    const responseGoogle = (response) => {
+        const access_token = response.accessToken
+        const email = response.profileObj.email
 
-        axios.post(`http://localhost:8000/auth/oauthlogin`, {
+        axios.post(`${process.env.REACT_APP_SYNTH_BACKEND}/auth/oauthlogin`, {
             access_token,
             email
         }).then((res) => {
             if (res.data.ok) {
-                localStorage.setItem('token', res.tokenId)
-                console.log(res.data)
+                localStorage.setItem('token', response.tokenId)
+                console.log(res)
             } else {
                 console.log('error')
             }
@@ -31,7 +31,7 @@ const Login = () => {
         <div>
             <GoogleLogin
                 buttonText="Sign in with Google"
-                clientId="651777357198-bploucn8m5u37f1o4ie2kqe2bkbkk8fv.apps.googleusercontent.com"
+                clientId={process.env.REACT_APP_CLIENT_ID}
                 onSuccess={responseGoogle}
                 onFailure={failureGoogle}
                 isSignedIn={true}
