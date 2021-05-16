@@ -26,7 +26,7 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 50px;
 }
-.setting-button {
+/* .setting-button {
   margin-left: 10px;
   width: 30%;
   height: 50px;
@@ -34,7 +34,7 @@
   margin-right: 15px;
   background-color: #bbb;
   border-radius: 70%;
-}
+} */
 .recently-played {
   background-color: violet;
   height: 100%;
