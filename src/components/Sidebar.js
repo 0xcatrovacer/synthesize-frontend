@@ -21,7 +21,7 @@ const Sidebar = () => {
           </div>
           <p className="brand-name">Synthesize</p>
         </div>
-        <div className="linebelow"></div>
+       
         <ul className="container sidebar-mainlist">
           <li className="sidebar-list-items">
             <Link to="/">Home</Link>
