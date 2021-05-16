@@ -36,6 +36,7 @@
 .sidebar-web .sidebar-list-items {
   padding: 20px;
   margin: 10px;
+  border: 1px solid transparent;
   border-radius: 10px;
 }
 .sidebar-web .sidebar-list-items:hover {
