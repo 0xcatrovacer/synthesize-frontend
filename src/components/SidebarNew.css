@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
 .sidebar-web {
   position: absolute;
   left: 0;
@@ -57,10 +60,10 @@
   color: #f7f7f7;
 }
 .brand-name {
-  font-family: sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 27px;
   line-height: 41px;
   margin-right: 20px;
   color: #fffbfb;

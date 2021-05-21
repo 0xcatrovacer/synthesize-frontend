@@ -1,15 +1,23 @@
-import { useState } from 'react'
-import "./Playbar.css"
+import { useState } from "react";
+import "./Playbar.css";
+import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import FavoriteIcon from "@material-ui/icons/Favorite";
+import SkipPreviousIcon from "@material-ui/icons/SkipPrevious";
+import SkipNextIcon from "@material-ui/icons/SkipNext";
+import RepeatIcon from "@material-ui/icons/Repeat";
+
+import Music from "./Music";
 const Playbar = () => {
-  const [play, setPlay] = useState(false);
-
+  const [playc, setPlay] = useState(false);
+  const [heart, setHeart] = useState(false);
   const play_pause = () => {
-    setPlay(!play);
-  }
-
-
-
-
+    setPlay(!playc);
+  };
+  const heartDetect = () => {
+    setHeart(!heart);
+  };
+  const repeat = () => { };
+ 
   return (
     <div className="container-playbar">
       <div className="playbar">
@@ -19,26 +27,30 @@ const Playbar = () => {
           <div className="artist">Testing-artist</div>
         </div>
         <div className="heart">
-          <i className="fas fa-heart fa-2x"></i>
+          {heart ? (
+            <FavoriteIcon fontSize="large" onClick={heartDetect} />
+          ) : (
+            <FavoriteBorderIcon fontSize="large" onClick={heartDetect} />
+          )}
         </div>
         <div className="play-controls">
-          <div className="previous">
-            <i className="fas fa-step-backward fa-2x"></i>
+          <div className="previous" style={{ fontSize: "50px" }}>
+            <SkipPreviousIcon fontSize="inherit" />
           </div>
-          <div className="play" onClick={play_pause}>
-            <i className={play ? "fas fa-play fa-3x" : "fas fa-pause-circle fa-3x"}></i>
+          <div>                  
+            <Music/>
           </div>
-          <div className="next">
-            <i className="fas fa-step-forward fa-2x"></i>
+          <div className="next" style={{ fontSize: "50px" }}>
+            <SkipNextIcon fontSize="inherit" />
           </div>
         </div>
         <div className="duration"></div>
-        <div className="repeat">
-          <i className="fas fa-redo fa-2x"></i>
+        <div className="repeat" onClick={repeat} style={{ fontSize: "50px" }}>
+          <RepeatIcon fontSize="inherit" />
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Playbar;

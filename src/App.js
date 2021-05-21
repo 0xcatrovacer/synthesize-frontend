@@ -15,12 +15,11 @@ function App() {
           </Route>
 
           <AuthRoute path="/home" exact component={Home} />
-
+          <Route exact path="/aboutus"></Route>
         </Switch>
       </Router>
     </div>
   );
 }
-
 
 export default App;
