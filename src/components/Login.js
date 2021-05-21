@@ -17,7 +17,6 @@ const Login = () => {
         }).then((res) => {
             if (res.data.ok) {
                 localStorage.setItem('token', response.tokenId)
-                console.log(res)
                 history.push('/home')
             } else {
                 console.log('error')
