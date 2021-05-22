@@ -8,15 +8,11 @@
   padding: 0;
   height: 100vh;
 }
-/* 
-.Home {
-  height: ;
-} */
 
 :root {
-  background: url(./components/bg.jpg);
+  background: url(./components/bg1.jpg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position:top;
   background-attachment: inherit;
-  background-size: cover;
+  background-size:cover;
 }

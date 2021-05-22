@@ -1,0 +1,16 @@
+.icon-controller {
+    position: absolute;
+    right: 54.5%;
+    left: 45.5%;
+    transition: all 0.2s ease-out;
+    color: white;
+    bottom: 30px;
+    height: 30px;
+    width: 30px;
+
+}
+
+.icon-controller:hover {
+    cursor:pointer;
+    color: white;
+}

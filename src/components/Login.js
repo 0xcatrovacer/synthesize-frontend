@@ -2,6 +2,8 @@ import React from 'react'
 import GoogleLogin from 'react-google-login'
 import axios from "axios"
 import { useHistory } from 'react-router'
+import "./Login.css"
+import logo from './logo.png';
 
 const Login = () => {
 
@@ -31,10 +33,14 @@ const Login = () => {
     }
 
     return (
-        <div>
+        
+        <div className="content">
+        <div className="image1"><img src={logo} height="162px" width="166px" alt="" /></div> 
+        <div className="name">Synthesize</div>
+        <div className="tagline">Feel The Music</div>
             <GoogleLogin
                 render={renderProps => (
-                    <button onClick={renderProps.onClick} disabled={renderProps.disabled}>Login with Google</button>
+                    <button className="button" onClick={renderProps.onClick} disabled={renderProps.disabled}>Login with Google</button>
                 )}
                 clientId={process.env.REACT_APP_CLIENT_ID}
                 onSuccess={responseGoogle}
