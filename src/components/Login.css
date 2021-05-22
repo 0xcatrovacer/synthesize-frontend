@@ -1,0 +1,88 @@
+.login-web{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+  }
+  
+  .content{
+    position: absolute;
+    top: 15%;
+    left: 35.7%;
+    height: 462px;
+    width: 410px;
+    background: linear-gradient(180deg, rgba(56, 63, 122, 0.705) 59.37%, rgba(87, 94, 151, 0.568) 100%);
+    text-align: center;
+    border-radius: 44px;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+  }
+  
+  .name{
+    color:whitesmoke;
+    font-size: 40px;
+    padding-top: 17px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+    
+  .image{
+    padding-top: 50px;
+    
+    
+    
+  }
+  
+  .button{
+    margin-top: 65px;
+    margin-left: 129.2px;
+    font-size: 12.8px;
+    width: 157px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 15px;
+    font-weight: bold;
+    color:black;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+    
+  }
+  
+  .tagline{
+    padding-top: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(210, 205, 231, 0.836);
+    font-style:italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0092e6, 0 0 40px #00b0e6, 0 0 50px #00a5e6, 0 0 60px #00b0e6, 0 0 70px #00b0e6;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ffe44d, 0 0 60px #ff4da6, 0 0 70px #ffed4d, 0 0 80px #ff4da6;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  

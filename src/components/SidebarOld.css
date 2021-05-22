@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar-web {
+  margin: 0 0 0 0;
+  width: 160px;
+  height: 100vh;
+  background-color: rgb(16, 4, 70);
+}
+ .sidebar-web .linebelow{
+    width: 100px;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:thistle;
+}
+
+.sidebar-web .branding {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sidebar-web ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.sidebar-web .sidebar-list-items {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.sidebar-web .sidebar-list-items:hover {
+    border: 1px solid rgba(99, 139, 185, 0.199) ;
+}
+
+.sidebar-mobile {
+  background-color: aquamarine;
+}
+a {
+  text-decoration: none;
+  color: rgb(99, 139, 185);
+}
+.brand-name{
+    color: blanchedalmond;
+}
+

@@ -1,17 +1,15 @@
 import './Home.css'
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Link } from "react-router-dom";
+import React from 'react'
+import Playbar from './Playbar'
+import Userdetails from './Rightpane'
+import Searchbox from './Searchbox'
+import Sidebar from './Sidebar'
+
 
 const Home = () => {
-     const [mobile, setMobile] = useState(false);
-     const showMobile = () => {
-       if (window.innerWidth <= 800) {
-         setMobile(false);
-       } else {
-         setMobile(false);
-       }
-     };
-     window.addEventListener("resize", showMobile);
+     
      
      const ref = React.createRef();
      const handleScroll = (scrollOffset) => {
@@ -419,7 +417,11 @@ const Home = () => {
 
 
      return(
-        <div className={mobile ? "home-mobile" : "home-web"}>
+        <div className="home-web">
+        <Searchbox />
+        <Sidebar />
+        <Playbar />
+        <Userdetails />
             <text className="Heading">Popular Genres</text>
            
 
@@ -546,3 +548,5 @@ export default Home;
 
 
     
+
+
