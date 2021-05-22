@@ -1,5 +1,5 @@
 .container-playbar {
-  position: fixed;
+  position:absolute;
   bottom: 0px;
   color: white;
   background: linear-gradient(
@@ -14,7 +14,7 @@
    
   
   .playbar {
-    margin-top: 20px;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;

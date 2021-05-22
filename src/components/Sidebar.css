@@ -13,7 +13,9 @@
   display: inline-block;
   
 }
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap%27');
 
 .sidebar-web .branding {
   padding-top: 6px;
@@ -21,6 +23,7 @@
   flex-direction: row;
   align-items: center;
   height: 20%;
+ 
   
 }
 
@@ -61,12 +64,16 @@
   color: #ffffff;
 }
 .brand-name {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-style: normal;
-  font-weight: bold;
-  font-size: 29.5px;
+  font-weight:bold;
+  font-size: 34px;
   line-height: 41px;
   color: #fffbfb;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  
 }
 
 

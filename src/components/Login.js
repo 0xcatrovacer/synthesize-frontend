@@ -33,8 +33,9 @@ const Login = () => {
     }
 
     return (
+        
         <div className="content">
-        <div className="image"><img src={logo} height="150px" width="154px" alt="" /></div> 
+        <div className="image1"><img src={logo} height="162px" width="166px" alt="" /></div> 
         <div className="name">Synthesize</div>
         <div className="tagline">Feel The Music</div>
             <GoogleLogin

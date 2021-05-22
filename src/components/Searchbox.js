@@ -47,7 +47,7 @@ const Searchbox = () => {
               setToggledrop(true)
             }}
             onBlur={() => {
-              setToggledrop(false)
+            setToggledrop(false)
             }}
           />
 

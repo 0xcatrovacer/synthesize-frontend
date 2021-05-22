@@ -151,7 +151,13 @@ top: 142px;
   .image{
     height: 113px;
     width: 121px;
-    border-radius: 10px;
+    border-radius: 10px !important;
+    margin-top: 0px;
+    margin-top: 0px;
+    
+    
+    
+
     
   }
   
@@ -163,6 +169,8 @@ top: 142px;
     backdrop-filter: blur(20px);
     height: 170px;
     border-radius: 10px;
+    /* align-items: center; */
+   
     
     
   }
@@ -178,6 +186,7 @@ top: 142px;
     padding-bottom: 4px;
     text-decoration: none;
     font-weight:540;
+    
 
   }
 
@@ -190,6 +199,7 @@ top: 142px;
     color: #ccccdf;
     text-align: center;
     text-decoration: none;
+    
   }
 
   .slide1{

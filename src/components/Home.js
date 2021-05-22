@@ -459,7 +459,8 @@ const Home = () => {
                  ))}
                  
              </div>
-             <div className="slide2"><span className="angleLeft2 sliderButton" onClick={() => handleScroll(-800)} >&#10094;</span>
+             <div className="slide2">
+                 <span className="angleLeft2 sliderButton" onClick={() => handleScroll(-800)} >&#10094;</span>
              <span className="angleRight2 sliderButton" onClick={() => handleScroll(800)}>&#10095;</span></div>
              <div className="cards2" ref={ref}>
             
