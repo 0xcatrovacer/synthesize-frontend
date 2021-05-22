@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 .right-pane {
   position: absolute;
   right: 0;
@@ -16,7 +16,6 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 50px;
-  
 }
 
 .username {
@@ -25,37 +24,47 @@
   height: 50px;
   color: white;
   font-size: 28px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 50px;
 }
 
 .recently-played {
-  background: linear-gradient(180deg, #110849 0%, rgba(123, 125, 184, 0.19) 100%);
-backdrop-filter: blur(20px);
+  background: linear-gradient(
+    180deg,
+    #110849 0%,
+    rgba(123, 125, 184, 0.19) 100%
+  );
+  backdrop-filter: blur(20px);
   height: 100%;
 }
 
-.settingButton{
-  
+.settingButton {
   width: 100%;
 }
-.setting-button{
+.setting-button {
   align-self: center;
   font-size: 50px;
   margin-top: auto;
 }
 
-#about{
+#about {
   text-decoration: none;
 }
 
-#heading_1{
+#heading_1 {
   color: white;
   font-family: Ubuntu;
   font-style: normal;
- font-weight: normal;
+  font-weight: normal;
   align-self: center;
- 
+
   margin-left: 12.5%;
   margin-top: 20px;
+}
+
+#settings-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
