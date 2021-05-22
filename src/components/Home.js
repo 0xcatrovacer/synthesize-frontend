@@ -1,5 +1,4 @@
 import React from 'react'
-import Music from './Music'
 import Playbar from './Playbar'
 import Userdetails from './Rightpane'
 import Searchbox from './Searchbox'
@@ -12,7 +11,6 @@ const Home = () => {
             <Sidebar />
             <Playbar />
             <Userdetails />
-            <Music/>
         </div>
     )
 }
