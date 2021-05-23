@@ -26,7 +26,7 @@ const useAudio = (url) => {
 
 const Music = () => {
   const url =
-    "https://synthesize.s3.ap-south-1.amazonaws.com/tracks/Hip+Hop/Cardi+B++WAP+feat+Megan+Thee+Stallion.mp3";
+    "https://synthesize.s3.ap-south-1.amazonaws.com/tracks/EDM/Major+Lazer++DJ+Snake++Lean+On+feat+M%C3%98.mp3";
   const [playing, toggle] = useAudio(url);
 
   return (
