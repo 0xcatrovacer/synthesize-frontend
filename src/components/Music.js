@@ -24,9 +24,14 @@ const useAudio = (url) => {
   return [playing, toggle];
 };
 
-const Music = () => {
-  const url =
-    "https://synthesize.s3.ap-south-1.amazonaws.com/tracks/EDM/Major+Lazer++DJ+Snake++Lean+On+feat+M%C3%98.mp3";
+const Music = ({ playingTrack }) => {
+
+  const url = playingTrack.url
+
+  useEffect(() => {
+    console.log(playingTrack)
+  }, [playingTrack])
+
   const [playing, toggle] = useAudio(url);
 
   return (

@@ -11,6 +11,8 @@ import axios from 'axios';
 
 const Home = () => {
 
+    const [playingTrack, setPlayingTrack] = useState(null)
+
     const [tracksP, setTracksP] = useState([])
     const [tracksH, setTracksH] = useState([])
     const [tracksR, setTracksR] = useState([])
@@ -82,7 +84,7 @@ const Home = () => {
         <div className="home-web">
             <Searchbox />
             <Sidebar />
-            <Playbar />
+            <Playbar playingTrack={playingTrack} />
             <Userdetails />
             <div className="Heading">Popular Genres</div>
 
@@ -112,7 +114,9 @@ const Home = () => {
 
                         {tracksP && tracksP.map((track) => (
                             <span className="track" key={track._id}>
-                                <Link to={track.url}><img className="image" src={track.imageURL} /></Link>
+                                <div onClick={() => {
+                                    setPlayingTrack(track)
+                                }}><img className="image" src={track.imageURL} /></div>
                                 <span className="tname">{track.title}</span>
                                 <span className="tartist">{track.artists[0]} {track.artists.length > 1 ? <span>ft. {track.artists[1]}</span> : ''} </span>
 
@@ -126,7 +130,9 @@ const Home = () => {
 
                         {tracksH.map((track) => (
                             <span className="track" key={track._id}>
-                                <Link to={track.url}><img className="image" src={track.imageURL} /></Link>
+                                <div onClick={() => {
+                                    setPlayingTrack(track)
+                                }}><img className="image" src={track.imageURL} /></div>
                                 <span className="tname">{track.title}</span>
                                 <span className="tartist">{track.artists[0]} {track.artists.length > 1 ? <span>ft. {track.artists[1]}</span> : ''} </span>
 
@@ -141,7 +147,9 @@ const Home = () => {
 
                         {tracksR.map((track) => (
                             <span className="track" key={track._id}>
-                                <Link to={track.url}><img className="image" src={track.imageURL} /></Link>
+                                <div onClick={() => {
+                                    setPlayingTrack(track)
+                                }}><img className="image" src={track.imageURL} /></div>
                                 <span className="tname">{track.title}</span>
                                 <span className="tartist">{track.artists[0]} {track.artists.length > 1 ? <span>ft. {track.artists[1]}</span> : ''} </span>
 
@@ -157,7 +165,9 @@ const Home = () => {
 
                         {tracksPH.map((track) => (
                             <span className="track" key={track._id}>
-                                <Link to={track.url}><img className="image" src={track.imageURL} /></Link>
+                                <div onClick={() => {
+                                    setPlayingTrack(track)
+                                }}><img className="image" src={track.imageURL} /></div>
                                 <span className="tname">{track.title}</span>
                                 <span className="tartist">{track.artists[0]} {track.artists.length > 1 ? <span>ft. {track.artists[1]}</span> : ''} </span>
 
@@ -174,7 +184,9 @@ const Home = () => {
 
                         {tracksEDM.map((track) => (
                             <span className="track" key={track._id}>
-                                <Link to={track.url}><img className="image" src={track.imageURL} /></Link>
+                                <div onClick={() => {
+                                    setPlayingTrack(track)
+                                }}><img className="image" src={track.imageURL} /></div>
                                 <span className="tname">{track.title}</span>
                                 <span className="tartist">{track.artists[0]} {track.artists.length > 1 ? <span>ft. {track.artists[1]}</span> : ''} </span>
 
