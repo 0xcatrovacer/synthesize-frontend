@@ -16,16 +16,33 @@ const Playbar = ({ playingTrack }) => {
   const heartDetect = () => {
     setHeart(!heart);
   };
-  const repeat = () => { };
+  const repeat = () => {};
 
   return (
     <div className="container-playbar">
       <div className="playbar">
-        <div className="">{playingTrack && <img className="playbarimg" src={playingTrack.imageURL} />}</div>
+        <div className="">
+          {playingTrack && (
+            <img className="playbarimg" src={playingTrack.imageURL} />
+          )}
+        </div>
         <div className="song-description">
           <div className="song-name">{playingTrack && playingTrack.title}</div>
-          <div className="artist">{playingTrack && <span> {playingTrack.artists[0]} {playingTrack.artists.length > 1 ? <span>ft. {playingTrack.artists[1]}</span> : ''} </span>}</div>
+          <div className="artist">
+            {playingTrack && (
+              <span>
+                {" "}
+                {playingTrack.artists[0]}{" "}
+                {playingTrack.artists.length > 1 ? (
+                  <span>ft. {playingTrack.artists[1]}</span>
+                ) : (
+                  ""
+                )}{" "}
+              </span>
+            )}
+          </div>
         </div>
+
         <div className="heart">
           {heart ? (
             <FavoriteIcon fontSize="large" onClick={heartDetect} />
@@ -37,9 +54,7 @@ const Playbar = ({ playingTrack }) => {
           <div className="previous" style={{ fontSize: "50px" }}>
             <SkipPreviousIcon fontSize="inherit" />
           </div>
-          <div>
-            {playingTrack && <Music playingTrack={playingTrack} />}
-          </div>
+          <div>{playingTrack && <Music playingTrack={playingTrack} />}</div>
           <div className="next" style={{ fontSize: "50px" }}>
             <SkipNextIcon fontSize="inherit" />
           </div>
