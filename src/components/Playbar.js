@@ -7,7 +7,7 @@ import SkipNextIcon from "@material-ui/icons/SkipNext";
 import RepeatIcon from "@material-ui/icons/Repeat";
 
 import Music from "./Music";
-const Playbar = () => {
+const Playbar = ({ playingTrack }) => {
   const [playc, setPlay] = useState(false);
   const [heart, setHeart] = useState(false);
   const play_pause = () => {
@@ -16,16 +16,33 @@ const Playbar = () => {
   const heartDetect = () => {
     setHeart(!heart);
   };
-  const repeat = () => { };
- 
+  const repeat = () => {};
+
   return (
     <div className="container-playbar">
       <div className="playbar">
-        <div className="song-img"></div>
-        <div className="song-description">
-          <div className="song-name">Testing-song</div>
-          <div className="artist">Testing-artist</div>
+        <div className="">
+          {playingTrack && (
+            <img className="playbarimg" src={playingTrack.imageURL} />
+          )}
         </div>
+        <div className="song-description">
+          <div className="song-name">{playingTrack && playingTrack.title}</div>
+          <div className="artist">
+            {playingTrack && (
+              <span>
+                {" "}
+                {playingTrack.artists[0]}{" "}
+                {playingTrack.artists.length > 1 ? (
+                  <span>ft. {playingTrack.artists[1]}</span>
+                ) : (
+                  ""
+                )}{" "}
+              </span>
+            )}
+          </div>
+        </div>
+
         <div className="heart">
           {heart ? (
             <FavoriteIcon fontSize="large" onClick={heartDetect} />
@@ -37,9 +54,7 @@ const Playbar = () => {
           <div className="previous" style={{ fontSize: "50px" }}>
             <SkipPreviousIcon fontSize="inherit" />
           </div>
-          <div>                  
-            <Music/>
-          </div>
+          <div>{playingTrack && <Music playingTrack={playingTrack} />}</div>
           <div className="next" style={{ fontSize: "50px" }}>
             <SkipNextIcon fontSize="inherit" />
           </div>

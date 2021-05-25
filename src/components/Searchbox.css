@@ -86,3 +86,6 @@
   width: 270px;
   text-align: end;
 }
+.each-search-result:hover{
+  cursor: pointer;
+}

@@ -1,208 +1,179 @@
-.Container{
-position: absolute;
-height: 66.27%;
-overflow-x:scroll;
-overflow-y:scroll;
-right: 252px;
-left: 252px;
-top: 142px;
-
+.Container {
+  position: absolute;
+  height: 66.27%;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  right: 252px;
+  left: 252px;
+  top: 142px;
 }
 
-.Container::-webkit-scrollbar{
-    display: none;
+.Container::-webkit-scrollbar {
+  display: none;
 }
 
-
-
-
-.Heading{
-    font-size: 25px;
-    color: white;
-    position: absolute;
-    font-family:sans-serif;
-    font-style: normal;
-    font-weight:bold;
-    left: 285px;
-    top: 92px;
-    
-       
+.Heading {
+  font-size: 25px;
+  color: white;
+  position: absolute;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  left: 285px;
+  top: 92px;
 }
-.pop{
-    font-size: 18px;
-    color: white; 
-    position: absolute;
-    top: 0px;
-    font-family:sans-serif;
-    font-style: normal;
-    font-weight:bold;
-    left: 35px;
-
+.pop {
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  top: 0px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  left: 35px;
 }
 
-.hh{
-    font-size: 18px;
-    color: white;
-    position: absolute;
-    top: 232px;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    left: 35px;
-
+.hh {
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  top: 232px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  left: 35px;
 }
 
-.rock{
-    font-size: 18px;
-    color: white;
-    position: absolute;
-    top: 468px;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    left: 35px;
-
-
+.rock {
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  top: 466px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  left: 35px;
 }
-.pr{
-    font-size: 18px;
-    color: white;
-    position: absolute;
-    top: 692px;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    left: 35px;
-
+.pr {
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  top: 696px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  left: 35px;
 }
 
-.ed{
-    font-size: 18px;
-    color: white;
-    position: absolute;
-    top: 925px;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    left: 35px;
-
+.ed {
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  top: 928px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  left: 35px;
 }
 
-
-.cards{
-     display: flex;
-     flex-direction: column;
-     row-gap: 17px;
-     margin-left: 35px;
-     margin-top: 3px;
-    
+.cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
+  margin-left: 35px;
+  margin-top: 3px;
 }
-
 
 .cards1 {
-    display: flex;
-    flex-direction: row;
-    column-gap: 47px;
-    align-items: center;
-     
-  }
+  margin-top: 33px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 47px;
+  align-items: center;
+}
 
-  .cards2 {
-    display: flex;
-    flex-direction: row;
-    column-gap: 47px;
-    align-items: center;
-   
-    
-  }
-  .cards3 {
-    display: flex;
-    flex-direction: row;
-    column-gap: 47px;
-    align-items: center;
-   
-    
-  }
-  .cards4 {
-    display: flex;
-    flex-direction: row;
-    column-gap: 47px;
-    align-items: center;
-   
-    
-  }
+.cards2 {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 47px;
+  align-items: center;
+}
+.cards3 {
+  margin-top: 46px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 47px;
+  align-items: center;
+}
+.cards4 {
+  margin-top: 43px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 47px;
+  align-items: center;
+}
 
-  .cards5 {
-    display: flex;
-    flex-direction: row;
-    column-gap: 47px;
-    align-items: center;
-   
-    
-  }
+.cards5 {
+  margin-top: 47px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 47px;
+  align-items: center;
+}
 
-  .track:hover{
-    transform:translateX(2px)
-    translateY(-2px)
-  }
+.track:hover {
+  transform: translateX(2px) translateY(-2px);
+}
 
-  
-  
-  .image{
-    height: 113px;
-    width: 121px;
-    border-radius: 10px !important;
-    margin-top: 0px;
-    margin-top: 0px;
-    
-    
-    
+.image {
+  height: 113px;
+  width: 121px;
+  border-radius: 10px !important;
+  margin-top: 0px;
+  margin-top: 0px;
+}
 
-    
-  }
-  
-  .track {
-    width: 121px;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(180deg, rgba(56, 63, 122, 0.781) 59.37%, rgba(87, 95, 151, 0.582) 100%);
-    backdrop-filter: blur(20px);
-    height: 170px;
-    border-radius: 10px;
-    /* align-items: center; */
-   
-    
-    
-  }
+.track {
+  width: 121px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    180deg,
+    rgba(56, 63, 122, 0.781) 59.37%,
+    rgba(87, 95, 151, 0.582) 100%
+  );
+  backdrop-filter: blur(20px);
+  height: 170px;
+  border-radius: 10px;
+  /* align-items: center; */
+}
 
-  .tname{
-    font-family:sans-serif;
-    font-style: normal;
-    font-size: 12.4px;
-    line-height: 14px;
-    margin-top: 8px;
-    color: #fffbfb;
-    text-align: center;
-    padding-bottom: 4px;
-    text-decoration: none;
-    font-weight:540;
-    
+.tname {
+  font-family: sans-serif;
+  font-style: normal;
+  font-size: 12.4px;
+  line-height: 14px;
+  margin-top: 8px;
+  color: #fffbfb;
+  text-align: center;
+  padding-bottom: 4px;
+  text-decoration: none;
+  font-weight: 540;
+}
 
-  }
+.tartist {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 9.4px;
+  line-height: 10px;
+  color: #ccccdf;
+  text-align: center;
+  text-decoration: none;
+}
 
-  .tartist{
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 9.4px;
-    line-height: 10px;
-    color: #ccccdf;
-    text-align: center;
-    text-decoration: none;
-    
-  }
-
-  .slide1{
+/* .slide1{
     color: white;
     top: 0px;
     font-size: 20px;
@@ -251,10 +222,4 @@ top: 142px;
     flex-direction: row;
     column-gap: 10px;
 
-  }
-
-
-
-
-
-  
+  } */

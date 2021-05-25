@@ -5,7 +5,7 @@ import PauseCircleFilledIcon from "@material-ui/icons/PauseCircleFilled";
 import React, { useState, useEffect } from "react";
 
 const useAudio = (url) => {
-  const [audio] = useState(new Audio(url));
+  const [audio,setAudio] = useState(new Audio(url));
   const [playing, setPlaying] = useState(false);
 
   const toggle = () => setPlaying(!playing);
@@ -13,7 +13,11 @@ const useAudio = (url) => {
   useEffect(() => {
     playing ? audio.play() : audio.pause();
   }, [playing]);
-
+  useEffect(() => {
+    audio.pause();
+    setPlaying(false);
+    setAudio(new Audio(url));
+  }, [url]);
   useEffect(() => {
     audio.addEventListener("ended", () => setPlaying(false));
     return () => {
@@ -24,9 +28,14 @@ const useAudio = (url) => {
   return [playing, toggle];
 };
 
-const Music = () => {
-  const url =
-    "https://synthesize.s3.ap-south-1.amazonaws.com/tracks/Hip+Hop/Cardi+B++WAP+feat+Megan+Thee+Stallion.mp3";
+const Music = ({ playingTrack }) => {
+
+  const url = playingTrack.url
+
+  useEffect(() => {
+    console.log(playingTrack)
+  }, [playingTrack])
+
   const [playing, toggle] = useAudio(url);
 
   return (

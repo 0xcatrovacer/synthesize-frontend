@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+
+
 # testing
 /coverage
 
@@ -24,3 +26,5 @@ yarn-error.log*
 
 #dev
 .env
+.firebaserc
+/.firebase
