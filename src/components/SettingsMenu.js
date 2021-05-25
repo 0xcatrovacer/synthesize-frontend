@@ -4,7 +4,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { GoogleLogout } from "react-google-login";
 import { useHistory } from "react-router";
-import SettingsIcon from "@material-ui/icons/Settings";
+import DehazeOutlinedIcon from "@material-ui/icons/DehazeOutlined";
 import "./Rightpane.css"
 import { Link } from 'react-router-dom'
 const SettingsMenu = () => {
@@ -25,7 +25,7 @@ const SettingsMenu = () => {
 
   return (
     <div className="settingsButton" style={{ color: "white" }}>
-      <SettingsIcon
+      < DehazeOutlinedIcon
         aria-controls="settings-menu"
         aria-haspopup="true"
         onClick={handleClick}
