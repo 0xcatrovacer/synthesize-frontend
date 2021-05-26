@@ -3,7 +3,7 @@
 <br>
 
 <h1 align="center">
-Synthesize
+SYNTHESIZE
 </h1>
 <br>
 
@@ -61,8 +61,6 @@ $ npm start
 
 ---
 
-<br>
-
 ## Usage
 
 - Users can login with their Google accounts
@@ -79,11 +77,7 @@ $ npm start
 - `Liked songs` for users to like songs which will be stored in a separate playlist
 - `Saved Playlists` and `New Playlist` for users to create custom playlists
 
-<br>
-
 ---
-
-<br>
 
 ## Meet the Developers
 
@@ -113,8 +107,6 @@ $ npm start
 - Integrated a spellcheck algorithm for Searchbar
 - Added music data to MongoDB
 - Deployed backend server on DigitalOcean and songs to AWS S3
-
-<br>
 
 ---
 
