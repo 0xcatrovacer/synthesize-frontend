@@ -7,16 +7,22 @@ import SkipNextIcon from "@material-ui/icons/SkipNext";
 import RepeatIcon from "@material-ui/icons/Repeat";
 
 import Music from "./Music";
+import axios from "axios";
 const Playbar = ({ playingTrack }) => {
   const [playc, setPlay] = useState(false);
   const [heart, setHeart] = useState(false);
   const play_pause = () => {
     setPlay(!playc);
   };
-  const heartDetect = () => {
+  const heartDetect = (id) => {
     setHeart(!heart);
+    axios({
+      method: 'PATCH',
+      url: `${process.env.REACT_APP_SYNTH_BACKEND}/liketrack/${id}`,
+      // data: {likedby: }
+    })
   };
-  const repeat = () => {};
+  const repeat = () => { };
 
   return (
     <div className="container-playbar">
@@ -44,8 +50,10 @@ const Playbar = ({ playingTrack }) => {
         </div>
 
         <div className="heart">
-          {heart ? (
-            <FavoriteIcon fontSize="large" onClick={heartDetect} />
+          {playingTrack && heart ? (
+            <FavoriteIcon fontSize="large" onClick={() => {
+              heartDetect(playingTrack._id)
+            }} />
           ) : (
             <FavoriteBorderIcon fontSize="large" onClick={heartDetect} />
           )}

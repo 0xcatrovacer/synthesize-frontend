@@ -5,7 +5,7 @@ import { useHistory } from 'react-router'
 import "./Login.css"
 import logo from './logo.png';
 
-const Login = () => {
+const Login = ({ setUser }) => {
 
     const history = useHistory()
 
@@ -20,6 +20,7 @@ const Login = () => {
             if (res.data.ok) {
                 localStorage.setItem('token', response.tokenId)
                 history.push('/home')
+                setUser(res.data)
             } else {
                 console.log('error')
             }
@@ -33,11 +34,11 @@ const Login = () => {
     }
 
     return (
-        
+
         <div className="content">
-        <div className="image1"><img src={logo} height="162px" width="166px" alt="" /></div> 
-        <div className="name">Synthesize</div>
-        <div className="tagline">Feel The Music</div>
+            <div className="image1"><img src={logo} height="162px" width="166px" alt="" /></div>
+            <div className="name">Synthesize</div>
+            <div className="tagline">Feel The Music</div>
             <GoogleLogin
                 render={renderProps => (
                     <button className="button" onClick={renderProps.onClick} disabled={renderProps.disabled}>LOGIN WITH GOOGLE</button>

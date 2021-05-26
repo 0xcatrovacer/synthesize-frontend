@@ -1,32 +1,29 @@
 
 import './App.css';
-import Sidebar from "./components/Sidebar";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Searchbox from "./components/Searchbox";
-
-import Userdetails from "./components/Rightpane";
-import Playbar from "./components/Playbar";
-
-//import PlayButton from "./components/PlayButton";//
-
-
-import "./App.css";
-
+import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 import Login from "./components/Login";
 import Home from "./components/Home";
-import AuthRoute from "./utilities/AuthRoute";
+import { useState } from 'react';
 
 function App() {
+
+  const [user, setUser] = useState({})
+
+  const token = localStorage.getItem('token')
+
   return (
     <div className="App">
       <Router>
         <Switch>
 
           <Route exact path="/">
-            <Login />
+            <Login setUser={setUser} />
           </Route>
 
-          <AuthRoute path="/home" exact component={Home} />
+          <Route exact path='/home' >
+            {token ? <Home user={user} /> : <Redirect to='/' />}
+          </Route>
+
           <Route exact path="/aboutus"></Route>
         </Switch>
       </Router>

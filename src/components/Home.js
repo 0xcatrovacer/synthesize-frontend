@@ -9,7 +9,7 @@ import Sidebar from './Sidebar'
 import axios from 'axios';
 
 
-const Home = () => {
+const Home = (user) => {
 
     const [playingTrack, setPlayingTrack] = useState(null)
 
@@ -85,7 +85,7 @@ const Home = () => {
         <Searchbox setPlayingTrack={setPlayingTrack} />
         <Sidebar />
         <Playbar playingTrack={playingTrack} />
-        <Userdetails />
+        {user && <Userdetails user={user} />}
         <div className="Heading">Popular Genres</div>
 
         <div className="Container">
@@ -190,31 +190,31 @@ const Home = () => {
             </div>
             <div className="ed">Dance/Electronic</div>
 
-            <div className="cards5" ref={ref}>
-              {tracksEDM.map((track) => (
-                <span className="track" key={track._id}>
-                  <div
-                    onClick={() => {
-                      setPlayingTrack(track);
-                    }}
-                  >
-                    <img className="image" src={track.imageURL} />
-                  </div>
-                  <span className="tname">{track.title}</span>
-                  <span className="tartist">
-                    {track.artists[0]}{" "}
-                    {track.artists.length > 1 ? (
-                      <span>ft. {track.artists[1]}</span>
-                    ) : (
-                      ""
-                    )}{" "}
-                  </span>
-                </span>
-              ))}
+                    <div className="cards5" ref={ref}>
+                        {tracksEDM.map((track) => (
+                            <span className="track" key={track._id}>
+                                <div
+                                    onClick={() => {
+                                        setPlayingTrack(track);
+                                    }}
+                                >
+                                    <img className="image" src={track.imageURL} />
+                                </div>
+                                <span className="tname">{track.title}</span>
+                                <span className="tartist">
+                                    {track.artists[0]}{" "}
+                                    {track.artists.length > 1 ? (
+                                        <span>ft. {track.artists[1]}</span>
+                                    ) : (
+                                        ""
+                                    )}{" "}
+                                </span>
+                            </span>
+                        ))}
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     );
 };
 export default Home;
