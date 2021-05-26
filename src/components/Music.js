@@ -35,8 +35,7 @@ const Music = ({ playingTrack }) => {
   const url = playingTrack.url;
 
   useEffect(() => {
-    console.log(playingTrack);
-  }, [playingTrack]);
+  }, [playingTrack])
 
   const [playing, toggle] = useAudio(url);
 

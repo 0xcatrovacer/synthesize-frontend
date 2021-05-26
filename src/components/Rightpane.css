@@ -1,20 +1,15 @@
 .right-pane {
     position: absolute;
     right: 0%;
-    top: 0;
-    margin: 0;
-    width: 250px;
+    top: 0%;
+  
+    width: 18.42%;
     height: 88%;
     display: flex;
     flex-direction: column;
 
   }
   
-  .user-details {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 50px;
-  }
   
   /* .username {
     margin-top: 40px;
@@ -39,6 +34,10 @@
     border-radius: 0px;
     border-radius: 10px;
   }
+  
+  
+  
+ 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 .right-pane {
@@ -47,7 +46,7 @@
   top: 0;
 
   margin: 0;
-  width: 250px;
+  width: 18.42%;
   height: 88%;
   display: flex;
   flex-direction: column;
@@ -56,40 +55,45 @@
 .user-details {
   display: flex;
   flex-direction: row;
-  margin-bottom: 50px;
+  margin-bottom: 19%;
   align-items: center;
   
 }
 
 .username {
-  margin-top: 20px;
-  width: 70%;
-  height: 50px;
+  margin-top: 9%;
+  font-weight: bold;
+  
   color: white;
-  font-size: 32px;
-  font-family: "Poppins", sans-serif;
-  line-height: 50px;
+  font-size: 26px;
+  font-family:"Quicksand";
+  line-height: 22px;
+  margin-left: 18%;
 }
+
 
 .recently-played {
   background: linear-gradient(
-    180deg,
-    #110849 0%,
-    rgba(123, 125, 184, 0.19) 100%
-  );
-  backdrop-filter: blur(20px);
+  180deg,
+  #110849 0%,
+  rgba(123, 125, 184, 0.19) 100%);
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px;
   border-radius: 10px;
+  right: 0%;
+  top: 0%;
+  
 }
 
-.settingButton {
-  width: 100%;
-  margin-top: 0px;
-}
+
+
 .setting-button {
-  align-self: center;
-  font-size: 50px;
-  margin-top: 30px;
+ 
+  font-size: 45px;
+  margin-top: 14.5%;
+  margin-right: 10%;
 }
 
 #about {
@@ -98,13 +102,13 @@
 
 #heading_1 {
   color: white;
-  font-family: Ubuntu;
+  font-family:sans-serif;
   font-style: normal;
   font-weight: bold;
   align-self: center;
-
+  font-size: 26px;
   /* margin-left: 12.5%; */
-  margin-top: 25px;
+  margin-top: 10%;
 }
 
 #settings-menu {

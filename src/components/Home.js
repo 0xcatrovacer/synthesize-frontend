@@ -9,7 +9,7 @@ import Sidebar from './Sidebar'
 import axios from 'axios';
 
 
-const Home = () => {
+const Home = (user) => {
 
     const [playingTrack, setPlayingTrack] = useState(null)
 
@@ -75,9 +75,9 @@ const Home = () => {
 
 
     const ref = React.createRef();
-    // const handleScroll = (scrollOffset) => {
-    //     ref.current.scrollLeft += scrollOffset;
-    // };
+     const handleScroll = (scrollOffset) => {
+        ref.current.scrollLeft += scrollOffset;
+    };
 
 
     return (
@@ -85,22 +85,22 @@ const Home = () => {
         <Searchbox setPlayingTrack={setPlayingTrack} />
         <Sidebar />
         <Playbar playingTrack={playingTrack} />
-        <Userdetails />
+        {user && <Userdetails user={user} />}
         <div className="Heading">Popular Genres</div>
-
+        
         <div className="Container">
-          <div className="pop">Pop</div>
+        <div className="pop">Pop</div>
+        <div className="hh">Hip Hop</div>
+        <div className="rock">R&B</div>
+        <div className="pr">Progressive House</div>
+        <div className="ed">Dance/Electronic</div>
 
-          <div className="hh">Hip Hop</div>
-
-          <div className="rock">R&B</div>
-
-          <div className="pr">Progressive House</div>
-
-          <div className="ed">Dance/Electronic</div>
-
+          
           <div className="cards">
+         
             <div className="cards1" ref={ref}>
+         
+            
               {tracksP &&
                 tracksP.map((track) => (
                   <span className="track" key={track._id}>
@@ -123,6 +123,7 @@ const Home = () => {
                   </span>
                 ))}
             </div>
+            
             <div className="cards2" ref={ref}>
               {tracksH.map((track) => (
                 <span className="track" key={track._id}>
@@ -145,6 +146,7 @@ const Home = () => {
                 </span>
               ))}
             </div>
+           
 
             <div className="cards3" ref={ref}>
               {tracksR.map((track) => (
@@ -168,6 +170,7 @@ const Home = () => {
                 </span>
               ))}
             </div>
+            
 
             <div className="cards4" ref={ref}>
               {tracksPH.map((track) => (
@@ -191,32 +194,33 @@ const Home = () => {
                 </span>
               ))}
             </div>
+            
 
-            <div className="cards5" ref={ref}>
-              {tracksEDM.map((track) => (
-                <span className="track" key={track._id}>
-                  <div
-                    onClick={() => {
-                      setPlayingTrack(track);
-                    }}
-                  >
-                    <img className="image" src={track.imageURL} />
-                  </div>
-                  <span className="tname">{track.title}</span>
-                  <span className="tartist">
-                    {track.artists[0]}{" "}
-                    {track.artists.length > 1 ? (
-                      <span>ft. {track.artists[1]}</span>
-                    ) : (
-                      ""
-                    )}{" "}
-                  </span>
-                </span>
-              ))}
+                    <div className="cards5" ref={ref}>
+                        {tracksEDM.map((track) => (
+                            <span className="track" key={track._id}>
+                                <div
+                                    onClick={() => {
+                                        setPlayingTrack(track);
+                                    }}
+                                >
+                                    <img className="image" src={track.imageURL} />
+                                </div>
+                                <span className="tname">{track.title}</span>
+                                <span className="tartist">
+                                    {track.artists[0]}{" "}
+                                    {track.artists.length > 1 ? (
+                                        <span>ft. {track.artists[1]}</span>
+                                    ) : (
+                                        ""
+                                    )}{" "}
+                                </span>
+                            </span>
+                        ))}
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     );
 };
 export default Home;
