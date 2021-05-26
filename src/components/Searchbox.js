@@ -1,9 +1,9 @@
 import "./Searchbox.css";
 import React, { useState } from "react";
 import axios from "axios";
-import Playbar from './Playbar'
+import Playbar from "./Playbar";
 
-const Searchbox = ({setPlayingTrack}) => {
+const Searchbox = ({ setPlayingTrack }) => {
   const [input, setInput] = useState("");
 
   const [result, setResult] = useState([]);
@@ -15,7 +15,7 @@ const Searchbox = ({setPlayingTrack}) => {
 
     axios({
       method: "POST",
-      url: "http://143.110.255.209:8000/search",
+      url: `${process.env.REACT_APP_SYNTH_BACKEND}/search`,
       headers: {
         "Content-Type": "application/json",
       },

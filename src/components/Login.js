@@ -12,7 +12,6 @@ const Login = ({ setUser }) => {
     const responseGoogle = (response) => {
         const access_token = response.accessToken
         const email = response.profileObj.email
-
         axios.post(`${process.env.REACT_APP_SYNTH_BACKEND}/auth/oauthlogin`, {
             access_token,
             email
@@ -20,6 +19,7 @@ const Login = ({ setUser }) => {
             if (res.data.ok) {
                 localStorage.setItem('token', response.tokenId)
                 history.push('/home')
+                
                 setUser(res.data)
             } else {
                 console.log('error')

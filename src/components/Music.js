@@ -17,6 +17,9 @@ const useAudio = (url) => {
     audio.pause();
     setPlaying(false);
     setAudio(new Audio(url));
+    setTimeout(() => {
+      setPlaying(true);
+    }, 1300);
   }, [url]);
   useEffect(() => {
     audio.addEventListener("ended", () => setPlaying(false));
@@ -29,8 +32,7 @@ const useAudio = (url) => {
 };
 
 const Music = ({ playingTrack }) => {
-
-  const url = playingTrack.url
+  const url = playingTrack.url;
 
   useEffect(() => {
   }, [playingTrack])
