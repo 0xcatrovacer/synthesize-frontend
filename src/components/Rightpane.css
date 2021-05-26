@@ -1,9 +1,9 @@
 .right-pane {
     position: absolute;
     right: 0%;
-    top: 0;
-    margin: 0;
-    width: 250px;
+    top: 0%;
+  
+    width: 18.42%;
     height: 88%;
     display: flex;
     flex-direction: column;
@@ -13,18 +13,18 @@
   .user-details {
     display: flex;
     flex-direction: row;
-    margin-bottom: 50px;
+    margin-bottom: 10%;
   }
   
   .username {
-    margin-top: 40px;
+    margin-top: -2.2%;
     width: 70%;
-    height: 50px;
+    height: 12%;
     color: white;
     font-size: 28px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    line-height: 50px;
+    line-height: 12%;
   }
   
   .recently-played {
@@ -37,6 +37,7 @@
     flex-direction: column;
     border-radius: 0px;
     border-radius: 10px;
+    
   }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
@@ -46,7 +47,7 @@
   top: 0;
 
   margin: 0;
-  width: 250px;
+  width: 18.42%;
   height: 88%;
   display: flex;
   flex-direction: column;
@@ -55,20 +56,20 @@
 .user-details {
   display: flex;
   flex-direction: row;
-  margin-bottom: 50px;
+  margin-bottom: 19%;
   align-items: center;
   
 }
 
 .username {
-  margin-top: 20px;
+  margin-top: 12%;
   font-weight: bold;
-  height: 50px;
+ 
   color: white;
   font-size: 26px;
   font-family:"Quicksand";
-  line-height: 50px;
-  margin-left: 17px;
+  
+  margin-left: 9%;
 }
 
 .recently-played {
@@ -79,19 +80,20 @@
   );
   backdrop-filter: blur(20px);
   height: 100%;
-  border-radius: 10px;
+  border-radius: 3%;
+  right: 0%;
+  top: 0%;
+  
+   
 }
 
-.settingButton {
-  width: 50%;
-  margin-top: 0px;
 
-}
+
 .setting-button {
-  align-self:flex-start;
+ 
   font-size: 45px;
-  margin-top: 32px;
-  margin-right: 26px;
+  margin-top: 14.5%;
+  margin-right: 10%;
 }
 
 #about {
@@ -104,9 +106,9 @@
   font-style: normal;
   font-weight: bold;
   align-self: center;
-  font-size: 25px;
+  font-size: 26px;
   /* margin-left: 12.5%; */
-  margin-top: 24px;
+  margin-top: 10%;
 }
 
 #settings-menu {

@@ -18,21 +18,21 @@ const Sidebar = () => {
       <div className={mobile ? "sidebar-mobile" : "sidebar-web"}>
         <div className="branding">
           <div className="logo">
-            <img src={logo} height="80px" width="80px"  alt=""/>
+            <img className="im" src={logo} height="80px" width="80px"  alt=""/>
           </div>
           <p align="left" className="brand-name">Synthesize</p>
         </div>
         
         <ul className="container sidebar-mainlist">
           <li className="sidebar-list-items">
-            <Link to="/">Home</Link>
+            <Link to="/home">Home</Link>
           </li>
-          <li className="sidebar-list-items">
+          {/* <li className="sidebar-list-items">
             <Link to="/">Discover</Link>
-          </li>
+          </li> */}
 
           <li className="sidebar-list-items">
-            <Link to="/">Playlists</Link>
+            <Link to="">Playlists</Link>
           </li>
           <li className="sidebar-list-items">
             <Link to="/">New Playlist</Link>
