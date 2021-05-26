@@ -68,8 +68,8 @@
   font-size: 24px;
   font-family:"Quicksand";
   line-height: 22px;
-  margin-left: 1%;
-  width: 15%;
+  margin-left: 4%;
+  width: 10%;
   overflow-wrap:normal;
 }
 
@@ -95,7 +95,7 @@
  position: fixed;
   font-size: 45px;
   margin-top: 8.5%;
-  margin-left: 14%;
+  margin-left: 13.5%;
 }
 
 #about {
