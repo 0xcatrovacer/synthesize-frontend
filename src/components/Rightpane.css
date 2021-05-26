@@ -32,20 +32,22 @@
 .user-details {
   display: flex;
   flex-direction: row;
-  margin-bottom: 19%;
+  margin-bottom: 53%;
   align-items: center;
   
 }
 
 .username {
-  margin-top: 9%;
+  margin-top: 7.8%;
   font-weight: bold;
-  
+  position: fixed;
   color: white;
-  font-size: 26px;
+  font-size: 24px;
   font-family:"Quicksand";
   line-height: 22px;
-  margin-left: 18%;
+  margin-left: 1%;
+  width: 15%;
+  overflow-wrap:normal;
 }
 
 
@@ -60,17 +62,17 @@
   border-radius: 0px;
   border-radius: 10px;
   right: 0%;
-  top: 0%;
+  top: 5%;
   
 }
 
 
 
 .setting-button {
- 
+ position: fixed;
   font-size: 45px;
-  margin-top: 14.5%;
-  margin-right: 10%;
+  margin-top: 8.5%;
+  margin-left: 14%;
 }
 
 #about {
