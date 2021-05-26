@@ -62,7 +62,7 @@ const Playbar = ({ playingTrack }) => {
           <div className="previous" style={{ fontSize: "50px" }}>
             <SkipPreviousIcon fontSize="inherit" />
           </div>
-          <div>{playingTrack && <Music playingTrack={playingTrack} />}</div>
+          <div className="playbutton">{playingTrack && <Music playingTrack={playingTrack} />}</div>
           <div className="next" style={{ fontSize: "50px" }}>
             <SkipNextIcon fontSize="inherit" />
           </div>

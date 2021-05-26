@@ -25,7 +25,7 @@ const SettingsMenu = () => {
 
   return (
     <div className="settingsButton" style={{ color: "white" }}>
-      < DehazeOutlinedIcon
+      <DehazeOutlinedIcon
         aria-controls="settings-menu"
         aria-haspopup="true"
         onClick={handleClick}
@@ -39,10 +39,14 @@ const SettingsMenu = () => {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose}>
-          <Link id="about" to="/aboutus" style={{
-            textDecoration: 'none',
-            color: 'black'
-          }}>
+          <Link
+            id="about"
+            to="/under_construction"
+            style={{
+              textDecoration: "none",
+              color: "black",
+            }}
+          >
             <div> About Us</div>
           </Link>
         </MenuItem>

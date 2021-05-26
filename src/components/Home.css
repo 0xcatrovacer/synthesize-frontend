@@ -23,6 +23,7 @@
   font-weight: bold;
   left: 21.05%;
   top: 14.4%;
+  cursor: default;
 }
 .pop {
   font-size: 121.5%;
@@ -33,6 +34,7 @@
   font-style: normal;
   font-weight: bold;
   left: 4%;
+  cursor: default;
 }
 
 .hh {
@@ -44,6 +46,7 @@
   font-style: normal;
   font-weight: bold;
   left: 4%;
+  cursor: default;
 }
 
 .rock {
@@ -55,6 +58,7 @@
   font-style: normal;
   font-weight: bold;
   left: 4%;
+  cursor: default;
 }
 .pr {
   font-size: 121.5%;
@@ -65,6 +69,7 @@
   font-style: normal;
   font-weight: bold;
   left: 4%;
+  cursor: default;
 }
 
 .ed {
@@ -76,6 +81,7 @@
   font-style: normal;
   font-weight: bold;
   left: 4%;
+  cursor: default;
 } 
 
 .cards {
@@ -84,6 +90,7 @@
   row-gap: 17px;
   margin-left: 4%;
   margin-top: 5%;
+  
 }
 
 .cards1 {
@@ -149,6 +156,7 @@
   height: 170px;
   border-radius: 10px;
   /* align-items: center; */
+  cursor: pointer;
 }
 
 .tname {
