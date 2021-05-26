@@ -1,6 +1,9 @@
 <!-- Headings -->
 
 <br>
+<h1 align="center">
+<img src="https://synthesize.s3.ap-south-1.amazonaws.com/images/logo.png" width="300px" align="center">
+</h1>
 
 <h1 align="center">
 SYNTHESIZE
