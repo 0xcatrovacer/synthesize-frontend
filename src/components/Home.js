@@ -89,11 +89,17 @@ const Home = (user) => {
             <div className="Heading">Popular Genres</div>
 
             <div className="Container">
+                <div className="pop">Pop</div>
+                <div className="hh">Hip Hop</div>
+                <div className="rock">R&B</div>
+                <div className="pr">Progressive House</div>
+                <div className="ed">Dance/Electronic</div>
+
 
                 <div className="cards">
-                    <div className="slide1"><span className="angleRight sliderButton" onClick={() => handleScroll(800)}>&#10095;</span></div>
-                    <div className="pop">Pop</div>
+
                     <div className="cards1" ref={ref}>
+
 
                         {tracksP &&
                             tracksP.map((track) => (
@@ -117,7 +123,7 @@ const Home = (user) => {
                                 </span>
                             ))}
                     </div>
-                    <div className="hh">Hip Hop</div>
+
                     <div className="cards2" ref={ref}>
                         {tracksH.map((track) => (
                             <span className="track" key={track._id}>
@@ -140,7 +146,7 @@ const Home = (user) => {
                             </span>
                         ))}
                     </div>
-                    <div className="rock">R&B</div>
+
 
                     <div className="cards3" ref={ref}>
                         {tracksR.map((track) => (
@@ -164,7 +170,7 @@ const Home = (user) => {
                             </span>
                         ))}
                     </div>
-                    <div className="pr">Progressive House</div>
+
 
                     <div className="cards4" ref={ref}>
                         {tracksPH.map((track) => (
@@ -188,7 +194,7 @@ const Home = (user) => {
                             </span>
                         ))}
                     </div>
-                    <div className="ed">Dance/Electronic</div>
+
 
                     <div className="cards5" ref={ref}>
                         {tracksEDM.map((track) => (

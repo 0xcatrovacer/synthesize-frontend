@@ -28,7 +28,7 @@
   font-size: 121.5%;
   color: white;
   position: absolute;
- 
+  margin-top: 0%;
   font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -39,7 +39,7 @@
   font-size: 121.5%;
   color: white;
   position: absolute;
-  top: 52.6%;
+  margin-top: 232px;
   font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -50,7 +50,7 @@
   font-size: 121.5%;
   color: white;
   position: absolute;
-  top: 106.1%;
+  margin-top: 469px;
   font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -60,7 +60,7 @@
   font-size: 121.5%;
   color: white;
   position: absolute;
-  top: 158.88%;
+  margin-top: 700px;
   font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -71,7 +71,7 @@
   font-size: 121.5%;
   color: white;
   position: absolute;
-  top: 211.95%;
+  margin-top: 931px;
   font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -83,7 +83,7 @@
   flex-direction: column;
   row-gap: 17px;
   margin-left: 4%;
-  margin-top: 0%;
+  margin-top: 5%;
 }
 
 .cards1 {

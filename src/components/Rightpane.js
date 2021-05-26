@@ -4,11 +4,7 @@ import SettingsMenu from './SettingsMenu'
 
 const Userdetails = ({ user }) => {
 
-    useEffect(() => {
-        console.log(user)
-    }, [])
-
-    const name = user.user.name || 'User'
+    const name = user.user.name || "User"
 
     return (<div className="right-pane">
         <div className="user-details">
