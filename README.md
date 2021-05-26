@@ -1,7 +1,12 @@
 <!-- Headings -->
 
+<br>
 <h1 align="center">
-Synthesize
+<img src="https://synthesize.s3.ap-south-1.amazonaws.com/images/logo.png" width="300px" align="center">
+</h1>
+
+<h1 align="center">
+SYNTHESIZE
 </h1>
 <br>
 
@@ -15,15 +20,9 @@ Synthesize
 
 ---
 
-<br>
-
-## Deployed Version: [Synthesize](https://synthesize-79241.web.app "Synthesize")
-
-<br>
+### Deployed Version: [Synthesize](https://synthesize-79241.web.app "Synthesize")
 
 ---
-
-<br>
 
 ## For Developers:
 
@@ -56,22 +55,14 @@ Start the app:
 $ npm start
 ```
 
-<br>
-
 ---
-
-<br>
 
 ## Built with
 
 - [ReactJS](https://reactjs.org/ "React")
 - [Material UI](https://material-ui.com/ "MaterialUI")
 
-<br>
-
 ---
-
-<br>
 
 ## Usage
 
@@ -89,11 +80,7 @@ $ npm start
 - `Liked songs` for users to like songs which will be stored in a separate playlist
 - `Saved Playlists` and `New Playlist` for users to create custom playlists
 
-<br>
-
 ---
-
-<br>
 
 ## Meet the Developers
 
@@ -124,11 +111,7 @@ $ npm start
 - Added music data to MongoDB
 - Deployed backend server on DigitalOcean and songs to AWS S3
 
-<br>
-
 ---
-
-<br>
 
 ## What We Learnt
 
@@ -140,7 +123,5 @@ $ npm start
 - Basic Material UI concepts
 - Communication between backend and frontend
 - Deploying apps in production
-
-<br>
 
 ---
