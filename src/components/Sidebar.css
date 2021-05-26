@@ -71,9 +71,9 @@
   font-size: 206%;
   margin-top: -4.9%;
   color: #fffbfb;
-  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  /* -webkit-animation: glow 2s ease-in-out infinite alternate;
     -moz-animation: glow 2s ease-in-out infinite alternate;
-    animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate; */
   cursor: default;
 }
 .im{

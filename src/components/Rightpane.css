@@ -68,7 +68,7 @@
   font-size: 24px;
   font-family:"Quicksand";
   line-height: 22px;
-  margin-left: 4%;
+  margin-left: 5%;
   width: 10%;
   overflow-wrap:normal;
 }
@@ -94,14 +94,9 @@
 .setting-button {
  position: fixed;
   font-size: 45px;
-<<<<<<< HEAD
   margin-top: 8.5%;
   margin-left: 13.5%;
-=======
-  margin-top: 14.5%;
-  margin-right: 10%;
   cursor: pointer;
->>>>>>> 9fa56adb04b9e3597782dcd305cb1a75fa2cdc9c
 }
 
 #about {
