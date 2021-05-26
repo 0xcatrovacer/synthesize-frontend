@@ -67,8 +67,26 @@ $ npm start
 ## Usage
 
 - Users can login with their Google accounts
+
+<h1 align="center">
+<img src="https://synthesize.s3.ap-south-1.amazonaws.com/images/ss1.jpeg" width="600px" align="center">
+</h1>
+
 - Users can click on any song card present in the Homepage to play the song
+
+
+<h1 align="center">
+<img src="https://synthesize.s3.ap-south-1.amazonaws.com/images/ss2.jpeg" width="600px" align="center">
+</h1>
+
+
 - Users can play/pause songs
+
+<h1 align="center">
+<img src="https://synthesize.s3.ap-south-1.amazonaws.com/images/ss4.jpeg" width="600px" align="center">
+</h1>
+
+
 - Users can also search for a song present in the database to play it
 
 <br>
