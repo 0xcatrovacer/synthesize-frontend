@@ -12,7 +12,6 @@ const Login = () => {
     const responseGoogle = (response) => {
         const access_token = response.accessToken
         const email = response.profileObj.email
-
         axios.post(`${process.env.REACT_APP_SYNTH_BACKEND}/auth/oauthlogin`, {
             access_token,
             email

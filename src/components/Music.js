@@ -5,7 +5,7 @@ import PauseCircleFilledIcon from "@material-ui/icons/PauseCircleFilled";
 import React, { useState, useEffect } from "react";
 
 const useAudio = (url) => {
-  const [audio,setAudio] = useState(new Audio(url));
+  const [audio, setAudio] = useState(new Audio(url));
   const [playing, setPlaying] = useState(false);
 
   const toggle = () => setPlaying(!playing);
@@ -17,6 +17,9 @@ const useAudio = (url) => {
     audio.pause();
     setPlaying(false);
     setAudio(new Audio(url));
+    setTimeout(() => {
+      setPlaying(true);
+    }, 1300);
   }, [url]);
   useEffect(() => {
     audio.addEventListener("ended", () => setPlaying(false));
@@ -29,12 +32,11 @@ const useAudio = (url) => {
 };
 
 const Music = ({ playingTrack }) => {
-
-  const url = playingTrack.url
+  const url = playingTrack.url;
 
   useEffect(() => {
-    console.log(playingTrack)
-  }, [playingTrack])
+    console.log(playingTrack);
+  }, [playingTrack]);
 
   const [playing, toggle] = useAudio(url);
 
