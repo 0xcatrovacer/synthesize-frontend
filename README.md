@@ -17,11 +17,7 @@ Synthesize
 
 ---
 
-<br>
-
-## Deployed Version: [Synthesize](https://synthesize-79241.web.app "Synthesize")
-
-<br>
+### Deployed Version: [Synthesize](https://synthesize-79241.web.app "Synthesize")
 
 ---
 
@@ -122,8 +118,6 @@ $ npm start
 
 ---
 
-<br>
-
 ## What We Learnt
 
 <br>
@@ -134,7 +128,5 @@ $ npm start
 - Basic Material UI concepts
 - Communication between backend and frontend
 - Deploying apps in production
-
-<br>
 
 ---
