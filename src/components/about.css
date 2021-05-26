@@ -1,0 +1,13 @@
+.test{
+    height: 100%;
+    width:80%;
+    z-index: 100;
+    transform: scale(0.9);
+    margin-left: auto;
+    margin-right: auto;
+  background: url(./158667.gif);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-attachment:center center ;
+  background-size:cover;
+}

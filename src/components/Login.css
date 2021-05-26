@@ -11,7 +11,7 @@
   top: 17%;
   left: 35%;
   right: 35%;
-  
+
   bottom: 17%;
   background: linear-gradient(
     180deg,
@@ -71,7 +71,7 @@
   animation: glow 2s ease-in-out infinite alternate;
 }
 
-  @keyframes glow {
+ @keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0092e6,
       0 0 40px #00b0e6, 0 0 50px #00a5e6, 0 0 60px #00b0e6, 0 0 70px #00b0e6;
