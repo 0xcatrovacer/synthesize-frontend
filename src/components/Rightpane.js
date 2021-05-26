@@ -1,13 +1,13 @@
 import './Rightpane.css'
 import SettingsMenu from './SettingsMenu'
 
-const Userdetails = () => {
+const Userdetails = ({ user }) => {
 
-
+    const name = user.user.name
 
     return (<div className="right-pane">
         <div className="user-details">
-            <div className="username">Username</div>
+            <div className="username">{name}</div>
             <div className="setting-button">
                 <SettingsMenu />
             </div>
