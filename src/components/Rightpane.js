@@ -5,7 +5,7 @@ import SettingsMenu from './SettingsMenu'
 const Userdetails = ({ user }) => {
 
     const name = user.user.name || "user";
-    const firstname= name.split(" ")[0]
+    const firstname = name.split(" ")[0]
 
 
 
@@ -18,10 +18,10 @@ const Userdetails = ({ user }) => {
             </div>
         </div>
         <div className="recently-played">
-          <h2 id="heading_1">Recently Played</h2>
-          <div className="recent-history container"></div>
+            <h2 id="heading_1">Recently Played</h2>
+            <div className="recent-history container"></div>
         </div>
-      </div>
+    </div>
     );
 }
 
