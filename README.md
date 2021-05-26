@@ -1,5 +1,7 @@
 <!-- Headings -->
 
+<br>
+
 <h1 align="center">
 Synthesize
 </h1>
@@ -22,8 +24,6 @@ Synthesize
 <br>
 
 ---
-
-<br>
 
 ## For Developers:
 
@@ -56,18 +56,12 @@ Start the app:
 $ npm start
 ```
 
-<br>
-
 ---
-
-<br>
 
 ## Built with
 
 - [ReactJS](https://reactjs.org/ "React")
 - [Material UI](https://material-ui.com/ "MaterialUI")
-
-<br>
 
 ---
 
