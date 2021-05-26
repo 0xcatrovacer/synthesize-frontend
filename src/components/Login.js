@@ -41,7 +41,7 @@ const Login = ({ setUser }) => {
             <div className="tagline">Feel The Music</div>
             <GoogleLogin
                 render={renderProps => (
-                    <button className="button" onClick={renderProps.onClick} disabled={renderProps.disabled}>Login with Google</button>
+                    <button className="button" onClick={renderProps.onClick} disabled={renderProps.disabled}>LOGIN WITH GOOGLE</button>
                 )}
                 clientId={process.env.REACT_APP_CLIENT_ID}
                 onSuccess={responseGoogle}
