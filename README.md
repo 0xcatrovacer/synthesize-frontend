@@ -1,70 +1,146 @@
-# Getting Started with Create React App
+<!-- Headings -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+Synthesize
+</h1>
+<br>
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+<!-- Description -->
+<br>
+<h2 align="center"> A Music Streaming Web App built by crew members of DevSoc
+</h2>
+<br>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Deployed Version: [Synthesize](https://synthesize-79241.web.app "Synthesize")
 
-### `npm test`
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## For Developers:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Clone the source locally:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+$ git clone https://github.com/swarnabgarang/synthesize-frontend.git
+$ cd synthesize-frontend
+```
 
-### `npm run eject`
+Install project dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+$ npm install
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Create environment variables:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Create file `.env`
+1. Enter env variables
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+REACT_APP_SYNTH_BACKEND="<backend url>"
+REACT_APP_CLIENT_ID="<client id from Google API>"
+```
 
-## Learn More
+Start the app:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+$ npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br>
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<br>
 
-### Analyzing the Bundle Size
+## Built with
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [ReactJS](https://reactjs.org/ "React")
+- [Material UI](https://material-ui.com/ "MaterialUI")
 
-### Making a Progressive Web App
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Usage
 
-### Deployment
+- Users can login with their Google accounts
+- Users can click on any song card present in the Homepage to play the song
+- Users can play/pause songs
+- Users can also search for a song present in the database to play it
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<br>
 
-### `npm run build` fails to minify
+## Upcoming Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- A `Progress Bar` to track the progress of a song
+- `Recently Played` for users to keep track of music they recently listened to
+- `Liked songs` for users to like songs which will be stored in a separate playlist
+- `Saved Playlists` and `New Playlist` for users to create custom playlists
+
+<br>
+
+---
+
+<br>
+
+## Meet the Developers
+
+<br>
+
+### [Pranay Varshney](https://github.com/pranayvarshney)
+
+- Developed Sidebar, Playbar, Rightpane, Account Menu and Music components
+- Added functionality to Searchbar component
+- Added functionality in Home music cards
+- Deployed frontend on Firebase
+
+<br>
+
+### [Simran Mishra](https://github.com/sim1925)
+
+- Designed the entire User Interface
+- Developed Home and Login component
+- Designed Home, Searchbar and Login components
+- Made CSS changes in all components for better user experience
+
+<br>
+
+### [Swarnab Garang](https://github.com/swarnabgarang)
+
+- Developed the entire backend
+- Integrated a spellcheck algorithm for Searchbar
+- Added music data to MongoDB
+- Deployed backend server on DigitalOcean and songs to AWS S3
+
+<br>
+
+---
+
+<br>
+
+## What We Learnt
+
+<br>
+
+- Team Collaboration
+- Collaboration on Github
+- Basic React Concepts
+- Basic Material UI concepts
+- Communication between backend and frontend
+- Deploying apps in production
+
+<br>
+
+---
