@@ -8,11 +8,11 @@
 
 .content {
   position: absolute;
-  top: 15%;
+  top: 17%;
   left: 35%;
   right: 35%;
   
-  bottom: 15%;
+  bottom: 17%;
   background: linear-gradient(
     180deg,
     rgba(56, 63, 122, 0.705) 59.37%,
