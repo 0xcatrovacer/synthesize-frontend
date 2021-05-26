@@ -1,13 +1,18 @@
+import { useEffect } from 'react'
 import './Rightpane.css'
 import SettingsMenu from './SettingsMenu'
 
 const Userdetails = ({ user }) => {
 
-    const name = user.user.name.split(" ").slice(0,-1).join(" ")
+    useEffect(() => {
+        console.log(user)
+    }, [])
+
+    const name = user.user.name || 'User'
 
     return (<div className="right-pane">
         <div className="user-details">
-            <div className="username">{name}</div>
+            {name && <div className="username">{name}</div>}
             <div className="setting-button">
                 <SettingsMenu />
             </div>

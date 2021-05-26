@@ -75,120 +75,120 @@ const Home = (user) => {
 
 
     const ref = React.createRef();
-     const handleScroll = (scrollOffset) => {
+    const handleScroll = (scrollOffset) => {
         ref.current.scrollLeft += scrollOffset;
     };
 
 
     return (
-      <div className="home-web">
-        <Searchbox setPlayingTrack={setPlayingTrack} />
-        <Sidebar />
-        <Playbar playingTrack={playingTrack} />
-        {user && <Userdetails user={user} />}
-        <div className="Heading">Popular Genres</div>
+        <div className="home-web">
+            <Searchbox setPlayingTrack={setPlayingTrack} />
+            <Sidebar />
+            <Playbar playingTrack={playingTrack} />
+            {user && <Userdetails user={user} />}
+            <div className="Heading">Popular Genres</div>
 
-        <div className="Container">
-          
-          <div className="cards">
-          <div className="slide1"><span className="angleRight sliderButton" onClick={() => handleScroll(800)}>&#10095;</span></div>
-          <div className="pop">Pop</div>
-            <div className="cards1" ref={ref}>
-            
-              {tracksP &&
-                tracksP.map((track) => (
-                  <span className="track" key={track._id}>
-                    <div
-                      onClick={() => {
-                        setPlayingTrack(track);
-                      }}
-                    >
-                      <img className="image" src={track.imageURL} />
+            <div className="Container">
+
+                <div className="cards">
+                    <div className="slide1"><span className="angleRight sliderButton" onClick={() => handleScroll(800)}>&#10095;</span></div>
+                    <div className="pop">Pop</div>
+                    <div className="cards1" ref={ref}>
+
+                        {tracksP &&
+                            tracksP.map((track) => (
+                                <span className="track" key={track._id}>
+                                    <div
+                                        onClick={() => {
+                                            setPlayingTrack(track);
+                                        }}
+                                    >
+                                        <img className="image" src={track.imageURL} />
+                                    </div>
+                                    <span className="tname">{track.title}</span>
+                                    <span className="tartist">
+                                        {track.artists[0]}{" "}
+                                        {track.artists.length > 1 ? (
+                                            <span>ft. {track.artists[1]}</span>
+                                        ) : (
+                                            ""
+                                        )}{" "}
+                                    </span>
+                                </span>
+                            ))}
                     </div>
-                    <span className="tname">{track.title}</span>
-                    <span className="tartist">
-                      {track.artists[0]}{" "}
-                      {track.artists.length > 1 ? (
-                        <span>ft. {track.artists[1]}</span>
-                      ) : (
-                        ""
-                      )}{" "}
-                    </span>
-                  </span>
-                ))}
-            </div>
-            <div className="hh">Hip Hop</div>
-            <div className="cards2" ref={ref}>
-              {tracksH.map((track) => (
-                <span className="track" key={track._id}>
-                  <div
-                    onClick={() => {
-                      setPlayingTrack(track);
-                    }}
-                  >
-                    <img className="image" src={track.imageURL} />
-                  </div>
-                  <span className="tname">{track.title}</span>
-                  <span className="tartist">
-                    {track.artists[0]}{" "}
-                    {track.artists.length > 1 ? (
-                      <span>ft. {track.artists[1]}</span>
-                    ) : (
-                      ""
-                    )}{" "}
-                  </span>
-                </span>
-              ))}
-            </div>
-            <div className="rock">R&B</div>
+                    <div className="hh">Hip Hop</div>
+                    <div className="cards2" ref={ref}>
+                        {tracksH.map((track) => (
+                            <span className="track" key={track._id}>
+                                <div
+                                    onClick={() => {
+                                        setPlayingTrack(track);
+                                    }}
+                                >
+                                    <img className="image" src={track.imageURL} />
+                                </div>
+                                <span className="tname">{track.title}</span>
+                                <span className="tartist">
+                                    {track.artists[0]}{" "}
+                                    {track.artists.length > 1 ? (
+                                        <span>ft. {track.artists[1]}</span>
+                                    ) : (
+                                        ""
+                                    )}{" "}
+                                </span>
+                            </span>
+                        ))}
+                    </div>
+                    <div className="rock">R&B</div>
 
-            <div className="cards3" ref={ref}>
-              {tracksR.map((track) => (
-                <span className="track" key={track._id}>
-                  <div
-                    onClick={() => {
-                      setPlayingTrack(track);
-                    }}
-                  >
-                    <img className="image" src={track.imageURL} />
-                  </div>
-                  <span className="tname">{track.title}</span>
-                  <span className="tartist">
-                    {track.artists[0]}{" "}
-                    {track.artists.length > 1 ? (
-                      <span>ft. {track.artists[1]}</span>
-                    ) : (
-                      ""
-                    )}{" "}
-                  </span>
-                </span>
-              ))}
-            </div>
-            <div className="pr">Progressive House</div>
+                    <div className="cards3" ref={ref}>
+                        {tracksR.map((track) => (
+                            <span className="track" key={track._id}>
+                                <div
+                                    onClick={() => {
+                                        setPlayingTrack(track);
+                                    }}
+                                >
+                                    <img className="image" src={track.imageURL} />
+                                </div>
+                                <span className="tname">{track.title}</span>
+                                <span className="tartist">
+                                    {track.artists[0]}{" "}
+                                    {track.artists.length > 1 ? (
+                                        <span>ft. {track.artists[1]}</span>
+                                    ) : (
+                                        ""
+                                    )}{" "}
+                                </span>
+                            </span>
+                        ))}
+                    </div>
+                    <div className="pr">Progressive House</div>
 
-            <div className="cards4" ref={ref}>
-              {tracksPH.map((track) => (
-                <span className="track" key={track._id}>
-                  <div
-                    onClick={() => {
-                      setPlayingTrack(track);
-                    }}
-                  >
-                    <img className="image" src={track.imageURL} />
-                  </div>
-                  <span className="tname">{track.title}</span>
-                  <span className="tartist">
-                    {track.artists[0]}{" "}
-                    {track.artists.length > 1 ? (
-                      <span>ft. {track.artists[1]}</span>
-                    ) : (
-                      ""
-                    )}{" "}
-                  </span>
-                </span>
-              ))}
-            </div>
-            <div className="ed">Dance/Electronic</div>
+                    <div className="cards4" ref={ref}>
+                        {tracksPH.map((track) => (
+                            <span className="track" key={track._id}>
+                                <div
+                                    onClick={() => {
+                                        setPlayingTrack(track);
+                                    }}
+                                >
+                                    <img className="image" src={track.imageURL} />
+                                </div>
+                                <span className="tname">{track.title}</span>
+                                <span className="tartist">
+                                    {track.artists[0]}{" "}
+                                    {track.artists.length > 1 ? (
+                                        <span>ft. {track.artists[1]}</span>
+                                    ) : (
+                                        ""
+                                    )}{" "}
+                                </span>
+                            </span>
+                        ))}
+                    </div>
+                    <div className="ed">Dance/Electronic</div>
 
                     <div className="cards5" ref={ref}>
                         {tracksEDM.map((track) => (
