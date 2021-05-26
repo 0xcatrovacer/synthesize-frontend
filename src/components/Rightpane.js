@@ -3,7 +3,7 @@ import SettingsMenu from './SettingsMenu'
 
 const Userdetails = ({ user }) => {
 
-    const name = user.user.name
+    const name = user.user.name.split(" ").slice(0,-1).join(" ")
 
     return (<div className="right-pane">
         <div className="user-details">

@@ -1,9 +1,9 @@
 .sidebar-web {
   position: absolute;
   left: 0%;
-  top: 0px;
+  top: 0%;
   margin: 0;
-  width: 250px;
+  width: 18.42%;
   height: 85%;
   background: linear-gradient(
     180deg,
@@ -18,7 +18,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap%27');
 
 .sidebar-web .branding {
-  padding-top: 6px;
+  padding-top: 2.5%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -29,26 +29,27 @@
 
 
 .sidebar-web ul {
-  margin-top: 10%;
+  
   text-decoration: none;
   list-style-type: none;
   height: 80%;
   display: flex;
   flex-direction: column;
   justify-content:space-evenly;
-  margin-top: 20px;
-  margin-left: 6px;
+  margin-top: 4.2%;
+  margin-left: 3%;
   
 }
 
 .sidebar-web .sidebar-list-items {
-  padding: 20px;
-  margin: 10px;
+  padding: 8.4%;
+  margin: 4.8%;
   border: 1px solid transparent;
   border-radius: 10px;
 }
 .sidebar-web .sidebar-list-items:hover {
   border: 1px solid rgba(99, 139, 185, 0.199);
+  
 }
 .sidebar-mobile {
   background-color: aquamarine;
@@ -58,7 +59,7 @@
   font-family:sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 28px;
   line-height: 20px;
 
   color: #ffffff;
@@ -67,13 +68,17 @@
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight:bold;
-  font-size: 34px;
-  line-height: 41px;
+  font-size: 206%;
+  margin-top: -4.9%;
   color: #fffbfb;
   -webkit-animation: glow 2s ease-in-out infinite alternate;
     -moz-animation: glow 2s ease-in-out infinite alternate;
     animation: glow 2s ease-in-out infinite alternate;
   
+}
+.im{
+  margin-top: -5%;
+
 }
 
 

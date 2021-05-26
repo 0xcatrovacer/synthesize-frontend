@@ -68,7 +68,7 @@ const Playbar = ({ playingTrack }) => {
           </div>
         </div>
         <div className="duration"></div>
-        <div className="repeat" onClick={repeat} style={{ fontSize: "50px" }}>
+        <div className="repeat" onClick={repeat} style={{ fontSize: "40px" }}>
           <RepeatIcon fontSize="inherit" />
         </div>
       </div>
