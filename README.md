@@ -100,6 +100,7 @@ $ npm start
 
 ---
 
+<!--
 ## Meet the Developers
 
 <br>
@@ -130,6 +131,8 @@ $ npm start
 - Deployed backend server on DigitalOcean and songs to AWS S3
 
 ---
+
+-->
 
 ## What We Learnt
 
